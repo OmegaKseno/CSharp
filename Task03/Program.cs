@@ -1,4 +1,6 @@
-﻿Console.Write("Enter a number between 0 and 7-> ");
+﻿//Напишите программу, которая будет выдавать
+//название дня недели по заданному номеру.
+Console.Write("Enter a number between 0 and 7-> ");
 int NumberDay = Convert.ToInt32(Console.ReadLine());
 if ( NumberDay>7|NumberDay<1)
 {
