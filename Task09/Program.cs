@@ -7,17 +7,24 @@
 
 int number = new Random().Next(10,100);
 Console.WriteLine("случайное число 10-99 -> "+number);
+//int firstDigit = number/10;
+//int secondDigit = number%10;
+//(firstDigit>secondDigit||firstDigit==secondDigit)
+//{
+ //   Console.WriteLine("MAX = "+firstDigit);
+//}
+//else
+//{
+//  Console.WriteLine("MAX = "+secondDigit);  
+//}
+//int result = firstDigit>secondDigit ? firstDigit:secondDigit;
+//Console.WriteLine("MAX = ter"+result); 
+int maximum = Maximum(number);
+int Maximum(int numberF )
+{
 int firstDigit = number/10;
-//Console.WriteLine(firstDigit);
 int secondDigit = number%10;
-//Console.WriteLine(secondDigit);
-if(firstDigit>secondDigit||firstDigit==secondDigit)
-{
-    Console.WriteLine("MAX = "+firstDigit);
-}
-else
-{
-  Console.WriteLine("MAX = "+secondDigit);  
-}
 int result = firstDigit>secondDigit ? firstDigit:secondDigit;
-Console.WriteLine("MAX = ter"+result); 
+    return result;
+}
+Console.WriteLine("MAX = "+maximum);
