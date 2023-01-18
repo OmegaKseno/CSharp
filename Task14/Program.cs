@@ -12,5 +12,5 @@ return numChek;
 
 Console.Write("Введите число -> ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.Write(MultiplicityCheck(number));
+Console.Write(number + " -> " + MultiplicityCheck(number));
 
