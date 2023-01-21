@@ -9,8 +9,8 @@ void PrintSquares(int number)
 int temp = 1;
 while(temp<=number)
 {
-    Console.WriteLine($"| {temp}|{temp*temp}   ");
+    Console.WriteLine($"| {temp}|{temp*temp,2} | ");
     temp++;
-    Console.WriteLine("|__|___|");
+
 }
 }
