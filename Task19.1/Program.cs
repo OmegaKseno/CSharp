@@ -6,18 +6,18 @@
 
 Console.Write("Введите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(number+"->"+Check(number));
+Console.WriteLine(number+"->"+CheckPalindrome(number));
 
 
-string Check (int num)
+string CheckPalindrome (int num)
 {   
-string set="" ; 
-while(num>0)
-{
- set= set+ Convert.ToString(num%10); 
-  num = num/10;  
-}
-return set == Convert.ToString(number)?"Да":"Нет";
+string coup=""; 
+   while(num>0)
+   {
+     coup+= Convert.ToString(num%10); 
+     num = num/10;  
+   }   
+return coup == Convert.ToString(number)?"Да":"Нет";
 
 }
 
