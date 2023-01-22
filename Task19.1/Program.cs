@@ -11,7 +11,7 @@ Console.WriteLine(number+"->"+CheckPalindrome(number));
 
 string CheckPalindrome (int num)
 {   
-string coup=""; 
+string coup=String.Empty; 
    while(num>0)
    {
      coup+= Convert.ToString(num%10); 
