@@ -6,24 +6,17 @@
 
 Console.Write("Введите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(number+"->"+CheckPalindrome(number));
+Console.WriteLine(number + "->" + CheckPalindrome(number));
 
 
-string CheckPalindrome (int num)
-{   
-string coup=String.Empty; 
-   while(num>0)
-   {
-     coup+= Convert.ToString(num%10); 
-     num = num/10;  
-   }   
-return coup == Convert.ToString(number)?"Да":"Нет";
+string CheckPalindrome(int num)
+{
+    string coup = String.Empty;
+    while (num > 0)
+    {
+        coup += Convert.ToString(num % 10);
+        num = num / 10;
+    }
+    return coup == Convert.ToString(number) ? "Да" : "Нет";
 
 }
-
-
-
-
-
-
-
