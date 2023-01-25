@@ -15,7 +15,7 @@ int SumOfNumber(int num)
 }
 
 Console.Write("Введите число -> ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number =Convert.ToInt32(Console.ReadLine());
 if(number>0)
 {
 int result = SumOfNumber(number);
