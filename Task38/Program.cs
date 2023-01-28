@@ -26,7 +26,7 @@ void PrintArrayDouble(double[] printArray)
         else
         {
 
-            Console.Write($"{ReplaceDotComma(printArray[i])} , ");
+            Console.Write($"{ReplaceDotComma(printArray[i])}, ");
         }
     }
     Console.Write("]");
