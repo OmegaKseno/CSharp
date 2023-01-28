@@ -21,11 +21,9 @@ void PrintArrayDouble(double[] printArray)
         if (i == printArray.Length - 1)
         {
             Console.Write(ReplaceDotComma(printArray[i]));
-            //Console.Write(Math.Round(printArray[i], 1));
         }
         else
         {
-
             Console.Write($"{ReplaceDotComma(printArray[i])}, ");
         }
     }
@@ -49,13 +47,13 @@ double DifferenceMinMax(double[] arr)
 string ReplaceDotComma(double num)
 {
 
-string str = Convert.ToString(Math.Round(num, 1));
-str=str.Replace(",",".");
-return str;
-    
+    string str = Convert.ToString(Math.Round(num, 1));
+    str = str.Replace(",", ".");
+    return str;
+
 }
 
-double[] array = CreationArrayDouble(6, 1, 100);
+double[] array = CreationArrayDouble(5, 1, 100);
 PrintArrayDouble(array);
 string result = ReplaceDotComma(DifferenceMinMax(array));
 Console.Write($" -> {result}");
