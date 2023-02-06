@@ -37,7 +37,7 @@ void SquareRoot(int[,] matrix)
 
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (matrix[i, j] % 2 == 0)
+            if (i % 2 == 0&&j%2==0)
             {
                 matrix[i, j] *= matrix[i, j];
             }
@@ -48,7 +48,7 @@ void SquareRoot(int[,] matrix)
 }
 
 
-int[,] array2D = CreateMatrixRndInt(3, 4, 1, 2);
+int[,] array2D = CreateMatrixRndInt(3, 4, 2, 5);
 PrintMatrix(array2D);
 SquareRoot(array2D);
 Console.WriteLine("Ответ");
