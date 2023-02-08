@@ -32,26 +32,23 @@ void Print2dArray(int[,] matrix)
     }
 }
 
+void ReplacingRowsWithColumns(int[,] matrix)
+{
+    int tempI = 0;
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = i + 1; j < matrix.GetLength(1); j++)
+        {
+            tempI = matrix[i, j];
+            matrix[i, j] = matrix[j, i];
+            matrix[j, i] = tempI;
+        }
+    }
 
-int[,]array2D = Creation2dArrayIntNumber(5, 5, 1, 10);
+
+}
+int[,] array2D = Creation2dArrayIntNumber(5, 5, 1, 10);
 Print2dArray(array2D);
-ReplacingRowsWithColumns (array2D);
+ReplacingRowsWithColumns(array2D);
 Console.WriteLine(" ");
 Print2dArray(array2D);
-
-
-void ReplacingRowsWithColumns (int[,]matrix)
-{
-int tempI = 0;
-for (int i = 0; i < matrix.GetLength(0); i++)
-{
-   for  (int j = i+1; j <matrix.GetLength(1); j++)
-    {
-        tempI = matrix[i,j];
-        matrix[i,j]=matrix[j,i];
-        matrix[j,i]=tempI;
-    }
-}
-
-
-}
