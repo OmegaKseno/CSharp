@@ -34,32 +34,32 @@ void Print2dArray(int[,] matrix)
         Console.WriteLine("|");
     }
 }
-int FindingMinimumString (int[,] matrix)
+int FindingMinimumString(int[,] matrix)
 {
-  
-  int index =0;
-  int sumMin = matrix[0,0] ;
-  
-  for (int i = 0; i < matrix.GetLength(0); i++)
+
+    int index = 0;
+    int sumMin = matrix[0, 0];
+
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int temp =0;
+        int temp = 0;
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-         temp+= matrix[i,j];
-         
+            temp += matrix[i, j];
+
         }
-       if(temp<sumMin||i==0)
-       {
-       index= i;
-        sumMin = temp;
-       }
+        if (temp < sumMin || i == 0)
+        {
+            index = i;
+            sumMin = temp;
+        }
     }
-    return index+1;
+    return index + 1;
 }
 
 
-int[,]array2D = Creation2dArrayIntNumber(5, 3, 1, 10);
+int[,] array2D = Creation2dArrayIntNumber(5, 3, 1, 10);
 Print2dArray(array2D);
 
-int result = FindingMinimumString (array2D);
+int result = FindingMinimumString(array2D);
 Console.WriteLine($"Строка с наименьшей суммой элементов -> {result}");
