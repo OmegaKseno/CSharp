@@ -12,5 +12,5 @@ void PrintNnumbers (int num)
    Console.Write(num);
 }
 }
- Console.Write($" N ={number} -> "); 
+ Console.Write("Задайте значение N -> "); 
  PrintNnumbers(number);
